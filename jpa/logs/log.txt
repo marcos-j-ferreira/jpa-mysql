@@ -1,0 +1,1883 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.4)
+
+2025-08-07T20:06:31.327-03:00  INFO 6048 --- [jpa] [  restartedMain] com.marcos.jpa.JpaApplication            : Starting JpaApplication using Java 17.0.15 with PID 6048 (/home/maanaim-som/estudos/docker-jpa-mysql/jpa/build/classes/java/main started by maanaim-som in /home/maanaim-som/estudos/docker-jpa-mysql/jpa)
+2025-08-07T20:06:31.334-03:00  INFO 6048 --- [jpa] [  restartedMain] com.marcos.jpa.JpaApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-08-07T20:06:31.491-03:00  INFO 6048 --- [jpa] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07T20:06:31.492-03:00  INFO 6048 --- [jpa] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07T20:06:35.454-03:00  INFO 6048 --- [jpa] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07T20:06:35.581-03:00  INFO 6048 --- [jpa] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 1 JPA repository interface.
+2025-08-07T20:06:37.114-03:00  INFO 6048 --- [jpa] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-07T20:06:37.154-03:00  INFO 6048 --- [jpa] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-07T20:06:37.155-03:00  INFO 6048 --- [jpa] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-07T20:06:37.266-03:00  INFO 6048 --- [jpa] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-07T20:06:37.275-03:00  INFO 6048 --- [jpa] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5775 ms
+2025-08-07T20:06:37.779-03:00  INFO 6048 --- [jpa] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07T20:06:37.942-03:00  INFO 6048 --- [jpa] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-07T20:06:38.104-03:00  INFO 6048 --- [jpa] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-07T20:06:38.846-03:00  INFO 6048 --- [jpa] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07T20:06:38.926-03:00  INFO 6048 --- [jpa] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-07T20:06:39.942-03:00  INFO 6048 --- [jpa] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d5fbd77
+2025-08-07T20:06:39.948-03:00  INFO 6048 --- [jpa] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-07T20:06:40.164-03:00  WARN 6048 --- [jpa] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-07T20:06:40.171-03:00  WARN 6048 --- [jpa] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-07T20:06:40.308-03:00  INFO 6048 --- [jpa] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07T20:06:42.677-03:00  INFO 6048 --- [jpa] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    alter table produtos 
+       modify column nome varchar(100) not null
+2025-08-07T20:06:43.045-03:00  INFO 6048 --- [jpa] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07T20:06:43.895-03:00  WARN 6048 --- [jpa] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07T20:06:45.543-03:00  INFO 6048 --- [jpa] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-07T20:06:45.619-03:00  INFO 6048 --- [jpa] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-07T20:06:45.658-03:00  INFO 6048 --- [jpa] [  restartedMain] com.marcos.jpa.JpaApplication            : Started JpaApplication in 16.442 seconds (process running for 18.194)
+2025-08-07T20:07:33.610-03:00  INFO 6048 --- [jpa] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07T20:07:33.611-03:00  INFO 6048 --- [jpa] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-07T20:07:33.617-03:00  INFO 6048 --- [jpa] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    update
+        produtos 
+    set
+        nome=?,
+        preco=? 
+    where
+        id=?
+2025-08-07T20:09:22.110-03:00  WARN 6048 --- [jpa] [nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.marcos.jpa.model.Produto com.marcos.jpa.controller.ProdutoController.criar(com.marcos.jpa.model.Produto) with 2 errors: [Field error in object 'produto' on field 'nome': rejected value []; codes [NotBlank.produto.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [produto.nome,nome]; arguments []; default message [nome]]; default message [ O nome não pode estar vazio]] [Field error in object 'produto' on field 'nome': rejected value []; codes [Size.produto.nome,Size.nome,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [produto.nome,nome]; arguments []; default message [nome],100,3]; default message [O nome deve ter entre 3 e 100 caracteres]] ]
+2025-08-07T20:09:46.669-03:00  WARN 6048 --- [jpa] [nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.marcos.jpa.model.Produto com.marcos.jpa.controller.ProdutoController.criar(com.marcos.jpa.model.Produto) with 2 errors: [Field error in object 'produto' on field 'preco': rejected value [null]; codes [NotNull.produto.preco,NotNull.preco,NotNull.java.lang.Double,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [produto.preco,preco]; arguments []; default message [preco]]; default message [O preço é obrigatorio]] [Field error in object 'produto' on field 'nome': rejected value [aa]; codes [Size.produto.nome,Size.nome,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [produto.nome,nome]; arguments []; default message [nome],100,3]; default message [O nome deve ter entre 3 e 100 caracteres]] ]
+2025-08-07T20:09:57.348-03:00  WARN 6048 --- [jpa] [io-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.marcos.jpa.model.Produto com.marcos.jpa.controller.ProdutoController.criar(com.marcos.jpa.model.Produto): [Field error in object 'produto' on field 'preco': rejected value [null]; codes [NotNull.produto.preco,NotNull.preco,NotNull.java.lang.Double,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [produto.preco,preco]; arguments []; default message [preco]]; default message [O preço é obrigatorio]] ]
+2025-08-07T20:09:57.960-03:00  WARN 6048 --- [jpa] [nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.marcos.jpa.model.Produto com.marcos.jpa.controller.ProdutoController.criar(com.marcos.jpa.model.Produto): [Field error in object 'produto' on field 'preco': rejected value [null]; codes [NotNull.produto.preco,NotNull.preco,NotNull.java.lang.Double,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [produto.preco,preco]; arguments []; default message [preco]]; default message [O preço é obrigatorio]] ]
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    delete 
+    from
+        produtos 
+    where
+        id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    delete 
+    from
+        produtos 
+    where
+        id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    delete 
+    from
+        produtos 
+    where
+        id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    delete 
+    from
+        produtos 
+    where
+        id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    delete 
+    from
+        produtos 
+    where
+        id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    delete 
+    from
+        produtos 
+    where
+        id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    delete 
+    from
+        produtos 
+    where
+        id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    delete 
+    from
+        produtos 
+    where
+        id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    delete 
+    from
+        produtos 
+    where
+        id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    delete 
+    from
+        produtos 
+    where
+        id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+2025-08-07T20:15:28.277-03:00  WARN 6048 --- [jpa] [nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Double` from String "14.556.23": not a valid `Double` value]
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+2025-08-07T20:15:46.243-03:00  WARN 6048 --- [jpa] [nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Double` from String "14.556.23": not a valid `Double` value]
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        count(*) 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+2025-08-07T20:29:48.435-03:00  INFO 6048 --- [jpa] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (0 additions, 5 deletions, 0 modifications)
+2025-08-07T20:29:48.479-03:00  INFO 6048 --- [jpa] [       Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07T20:29:48.508-03:00  INFO 6048 --- [jpa] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-07T20:29:48.543-03:00  INFO 6048 --- [jpa] [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07T20:29:48.590-03:00  INFO 6048 --- [jpa] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-07T20:29:48.662-03:00  INFO 6048 --- [jpa] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.4)
+
+2025-08-07T20:29:51.498-03:00  INFO 6048 --- [jpa] [  restartedMain] com.marcos.jpa.JpaApplication            : Starting JpaApplication using Java 17.0.15 with PID 6048 (/home/maanaim-som/estudos/docker-jpa-mysql/jpa/build/classes/java/main started by maanaim-som in /home/maanaim-som/estudos/docker-jpa-mysql/jpa)
+2025-08-07T20:29:51.499-03:00  INFO 6048 --- [jpa] [  restartedMain] com.marcos.jpa.JpaApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-08-07T20:29:52.642-03:00  INFO 6048 --- [jpa] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07T20:29:52.690-03:00  INFO 6048 --- [jpa] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2025-08-07T20:29:53.415-03:00  INFO 6048 --- [jpa] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-07T20:29:53.426-03:00  INFO 6048 --- [jpa] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-07T20:29:53.428-03:00  INFO 6048 --- [jpa] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-07T20:29:53.474-03:00  INFO 6048 --- [jpa] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-07T20:29:53.476-03:00  INFO 6048 --- [jpa] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1957 ms
+2025-08-07T20:29:53.783-03:00  INFO 6048 --- [jpa] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07T20:29:53.805-03:00  INFO 6048 --- [jpa] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-07T20:29:53.893-03:00  INFO 6048 --- [jpa] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07T20:29:53.898-03:00  INFO 6048 --- [jpa] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-07T20:29:53.993-03:00  INFO 6048 --- [jpa] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d25acfb
+2025-08-07T20:29:53.995-03:00  INFO 6048 --- [jpa] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-07T20:29:53.999-03:00  WARN 6048 --- [jpa] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-07T20:29:54.000-03:00  WARN 6048 --- [jpa] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-07T20:29:54.003-03:00  INFO 6048 --- [jpa] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07T20:29:54.534-03:00  INFO 6048 --- [jpa] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07T20:29:54.785-03:00  INFO 6048 --- [jpa] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07T20:29:54.936-03:00  WARN 6048 --- [jpa] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07T20:29:55.721-03:00  INFO 6048 --- [jpa] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-07T20:29:55.795-03:00  INFO 6048 --- [jpa] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-07T20:29:55.824-03:00  INFO 6048 --- [jpa] [  restartedMain] com.marcos.jpa.JpaApplication            : Started JpaApplication in 4.49 seconds (process running for 1408.361)
+2025-08-07T20:29:55.833-03:00  INFO 6048 --- [jpa] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-07T20:29:57.241-03:00  INFO 6048 --- [jpa] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (5 additions, 0 deletions, 0 modifications)
+2025-08-07T20:29:57.247-03:00  INFO 6048 --- [jpa] [       Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07T20:29:57.259-03:00  INFO 6048 --- [jpa] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-07T20:29:57.268-03:00  INFO 6048 --- [jpa] [       Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07T20:29:57.273-03:00  INFO 6048 --- [jpa] [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-07T20:29:57.314-03:00  INFO 6048 --- [jpa] [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.4)
+
+2025-08-07T20:29:57.890-03:00  INFO 6048 --- [jpa] [  restartedMain] com.marcos.jpa.JpaApplication            : Starting JpaApplication using Java 17.0.15 with PID 6048 (/home/maanaim-som/estudos/docker-jpa-mysql/jpa/build/classes/java/main started by maanaim-som in /home/maanaim-som/estudos/docker-jpa-mysql/jpa)
+2025-08-07T20:29:57.890-03:00  INFO 6048 --- [jpa] [  restartedMain] com.marcos.jpa.JpaApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-08-07T20:29:58.646-03:00  INFO 6048 --- [jpa] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07T20:29:58.674-03:00  INFO 6048 --- [jpa] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2025-08-07T20:29:59.146-03:00  INFO 6048 --- [jpa] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-07T20:29:59.148-03:00  INFO 6048 --- [jpa] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-07T20:29:59.151-03:00  INFO 6048 --- [jpa] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-07T20:29:59.194-03:00  INFO 6048 --- [jpa] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-07T20:29:59.196-03:00  INFO 6048 --- [jpa] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1291 ms
+2025-08-07T20:29:59.352-03:00  INFO 6048 --- [jpa] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07T20:29:59.359-03:00  INFO 6048 --- [jpa] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-07T20:29:59.419-03:00  INFO 6048 --- [jpa] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07T20:29:59.421-03:00  INFO 6048 --- [jpa] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-08-07T20:29:59.488-03:00  INFO 6048 --- [jpa] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bf11a67
+2025-08-07T20:29:59.490-03:00  INFO 6048 --- [jpa] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-08-07T20:29:59.497-03:00  WARN 6048 --- [jpa] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-07T20:29:59.498-03:00  WARN 6048 --- [jpa] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-07T20:29:59.501-03:00  INFO 6048 --- [jpa] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07T20:29:59.793-03:00  INFO 6048 --- [jpa] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07T20:29:59.847-03:00  INFO 6048 --- [jpa] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07T20:30:00.038-03:00  WARN 6048 --- [jpa] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07T20:30:00.233-03:00  INFO 6048 --- [jpa] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-07T20:30:00.258-03:00  INFO 6048 --- [jpa] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-07T20:30:00.277-03:00  INFO 6048 --- [jpa] [  restartedMain] com.marcos.jpa.JpaApplication            : Started JpaApplication in 2.581 seconds (process running for 1412.814)
+2025-08-07T20:30:00.280-03:00  INFO 6048 --- [jpa] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-07T20:30:50.285-03:00  INFO 6048 --- [jpa] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07T20:30:50.286-03:00  INFO 6048 --- [jpa] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-07T20:30:50.289-03:00  INFO 6048 --- [jpa] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        produtos
+        (nome, preco) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.nome,
+        p1_0.preco 
+    from
+        produtos p1_0
+2025-08-07T20:48:25.918-03:00  WARN 6048 --- [jpa] [l-3:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@672fb076 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
